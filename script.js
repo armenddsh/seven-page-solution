@@ -16,8 +16,7 @@
   1, ...,4,5,(6),7,8
 */
 
-function getPages(currentPage, pageCount) {
-  debugger;
+export function getPages(currentPage, pageCount) {
   const maxPages = 7;
   let pages = null;
 
@@ -63,20 +62,4 @@ function getPages(currentPage, pageCount) {
     } 
   }
   return pages;
-}
-
-/*
-  Tests
-*/
-
-console.log(getPages(2, 5));
-console.log(getPages(4, 7));
-console.log(getPages(5, 8));
-console.log(getPages(6, 8));
-console.log(getPages(7, 8));
-console.log(getPages(8, 8));
-
-const pages = 100;
-for(let k = 0; k <= pages; k++) {
-   console.log(getPages(k, pages)); 
 }
